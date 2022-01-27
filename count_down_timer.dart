@@ -1,8 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:trikart_flutter_app/common/font_style.dart';
-import 'package:trikart_flutter_app/utilities/hex_color.dart';
 
 class OtpCountDownTimer extends StatefulWidget {
   final VoidCallback? callback;
