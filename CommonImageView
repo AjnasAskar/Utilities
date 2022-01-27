@@ -1,0 +1,38 @@
+import 'package:flutter/material.dart';
+import 'package:octo_image/octo_image.dart';
+
+class CommonImageView extends StatelessWidget {
+  final String image;
+  final double? height;
+  final bool isCircular;
+  final BoxFit? boxFit;
+  final double? width;
+
+  const CommonImageView(
+      {Key? key,
+      required this.image,
+      this.height,
+      this.width,
+        this.boxFit,
+      this.isCircular = false})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return OctoImage(
+      image: NetworkImage(image),
+      placeholderBuilder: (context) => Container(
+        height: height ?? double.maxFinite,
+        width: width ?? double.maxFinite,
+        decoration: BoxDecoration(
+            color: Colors.black12,
+            shape: isCircular ? BoxShape.circle : BoxShape.rectangle),
+      ),
+      errorBuilder: OctoError.icon(),
+      imageBuilder: isCircular ? OctoImageTransformer.circleAvatar() : null,
+      fit: boxFit ?? BoxFit.cover,
+      height: height ?? double.maxFinite,
+      width: width ?? double.maxFinite,
+    );
+  }
+}
