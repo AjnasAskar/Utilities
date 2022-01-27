@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:trikart_flutter_app/common/color_palette.dart';
-import 'package:trikart_flutter_app/common/font_style.dart';
 
 import 'reusable_widgets.dart';
 
