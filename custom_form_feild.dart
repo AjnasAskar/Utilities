@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:trikart_flutter_app/common/color_palette.dart';
-import 'package:trikart_flutter_app/common/font_style.dart';
-import 'package:trikart_flutter_app/utilities/hex_color.dart';
 import 'reusable_widgets.dart';
 import 'package:intl/intl.dart' as intl;
 
