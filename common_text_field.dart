@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:trikart_flutter_app/common/color_palette.dart';
 import 'package:trikart_flutter_app/common/font_style.dart';
 
@@ -60,7 +59,7 @@ class _CommonTextFieldState extends State<CommonTextField> {
     final outlinedBorder = OutlineInputBorder(
         borderSide: BorderSide(color: ColorPalette.primaryColor));
     return SizedBox(
-      height: 48.h,
+      height: 48,
       child: TextFormField(
           controller: widget.controller,
           style: widget.defaultFont
@@ -80,7 +79,7 @@ class _CommonTextFieldState extends State<CommonTextField> {
               counterText: "",
               focusedBorder: outlinedBorder,
               contentPadding:
-                  EdgeInsets.only(bottom: 5.h, left: 15.w, right: 15.w),
+                  EdgeInsets.only(bottom: 5, left: 15, right: 15),
               errorBorder: outlinedBorder,
               labelText: enableLabel ? widget.labelText : null,
               labelStyle: FontStyle.primary12Medium,
