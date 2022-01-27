@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:provider/provider.dart';
-import 'package:trikart_flutter_app/common/extensions.dart';
-import 'package:trikart_flutter_app/common/font_style.dart';
-import 'package:trikart_flutter_app/providers/app_data_provider.dart';
-import 'package:trikart_flutter_app/utilities/hex_color.dart';
+
 
 class CustomDropdown extends StatefulWidget {
   final String text;
